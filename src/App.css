@@ -10,7 +10,7 @@ html {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  font-family: "Stack Sans Headline", 'Times New Roman', Times, serif;
+  font-family: "Stack Sans Headline", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 }
 
 h1 {

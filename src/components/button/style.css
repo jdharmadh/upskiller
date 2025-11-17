@@ -1,0 +1,19 @@
+.button {
+    display: inline-block;
+    padding: clamp(10px, 2vw, 20px) clamp(20px, 4vw, 40px);
+    background-color: rgb(188, 82, 21);
+    color: black;
+    font-family: "Stack Sans Headline", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-size: clamp(14px, 2.5vw, 24px);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: rgb(218, 112, 44);
+    transform: scale(1.1) rotate(-10deg);
+}
