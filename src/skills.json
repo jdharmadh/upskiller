@@ -1,0 +1,58 @@
+[
+  {
+    "build": "Create a backend API with FastAPI",
+    "deploy": "Deploy the API to Kubernetes using a Docker container"
+  },
+  {
+    "build": "Create a backend API with Flask",
+    "deploy": "Write a load test suite in JS with different request patterns"
+  },
+  {
+    "build": "Create a backend API with Express.js",
+    "deploy": "Implement a Redis cache layer to optimize performance"
+  },
+  {
+    "build": "Create a backend API with Next.js",
+    "deploy": "Implement a rate limiter layer in JS"
+  },
+  {
+    "build": "Create a React UI with multiple flows and screens",
+    "deploy": "Use Jest to write unit and integration tests"
+  },
+  {
+    "build": "Create a React UI with multiple flows and screens",
+    "deploy": "Set up an Nginx reverse proxy to host the app"
+  },
+  {
+    "build": "Create a Vue UI  with multiple flows and screens",
+    "deploy": "Add authentication using OAuth or BetterAuth"
+  },
+  {
+    "build": "Create a Svelte UI with multiple flows and screens",
+    "deploy": "Set up continuous deployment with GitHub Actions"
+  },
+  {
+    "build": "Create a mobile app with Flutter",
+    "deploy": "Integrate push notifications using Firebase Cloud Messaging"
+  },
+  {
+    "build": "Create a mobile app with React Native",
+    "deploy": "Implement offline support with AsyncStorage"
+  },
+  {
+    "build": "Create an Angular UI with multiple flows and screens",
+    "deploy": "Set up a smooth infinite scroll that fetches data"
+  },
+  {
+    "build": "Create a mobile app with SwiftUI",
+    "deploy": "Integrate AR using ARKit"
+  },
+  {
+    "build": "Create an aI agent using LangChain",
+    "deploy": "Use uv for dependency management"
+  },
+  {
+    "build": "Create a RAG app from scratch using Sentence Transformers embeddings",
+    "deploy": "Use Pinecone as the vector database"
+  }
+]

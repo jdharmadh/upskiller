@@ -1,0 +1,5 @@
+p {
+    font-size: clamp(12px, 2vw, 18px);
+    color: rgb(206, 205, 195);
+    text-align: center;
+}
