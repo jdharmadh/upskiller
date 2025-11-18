@@ -44,7 +44,7 @@ const Prompt = ({ prompt, onSubmit, onCancel, submitLabel = "submit", cancelLabe
                     border: '1px solid #333',
                     resize: 'none',
                     color: '#ddd',
-                    backgroundColor: 'black',
+                    backgroundColor: 'rgb(28, 27, 26)',
                     fontSize: '14px',
                     fontFamily: 'inherit',
                 }}
@@ -54,7 +54,7 @@ const Prompt = ({ prompt, onSubmit, onCancel, submitLabel = "submit", cancelLabe
                 <Button
                     label={cancelLabel}
                     onClick={handleCancel}
-                    color="gray"
+                    color="rgb(135, 133, 128)"
                 />
                 <Button
                     label={submitLabel}

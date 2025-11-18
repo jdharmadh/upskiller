@@ -39,7 +39,7 @@
       "deploy": "Set up continuous deployment with GitHub Actions"
     },
     {
-      "build": "Create a mobile app with Flutter",
+      "build": "Create a mobile app with React Native Expo",
       "deploy": "Integrate push notifications using Firebase Cloud Messaging"
     },
     {
@@ -55,7 +55,7 @@
       "deploy": "Integrate AR using ARKit"
     },
     {
-      "build": "Create an aI agent using LangChain",
+      "build": "Create an AI agent using LangChain",
       "deploy": "Use uv for dependency management"
     },
     {

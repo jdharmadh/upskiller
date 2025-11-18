@@ -10,5 +10,6 @@ p.idea-text {
 
 h2 {
     font-size: x-large;
-    color: tan;
+    font-weight: normal;
+    color: rgb(218, 112, 44);
 }

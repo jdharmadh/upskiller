@@ -4,6 +4,16 @@ import Button from './Button';
 import Prompt from './Prompt';
 
 
+function generateChatGPTPrompt(build, deploy) {
+    return `Help me generate specific project ideas for this project:
+
+Build Goal: ${build}
+
+Deployment/Ship Goal: ${deploy}
+
+Generate unique and specific suggestions that have real-world use and impact.`;
+}
+
 function resetIdea() {
     localStorage.removeItem("idea");
     window.location.reload();
@@ -25,17 +35,17 @@ const Idea = ({ build, deploy }) => {
                     <h2>ship it</h2>
                     <p className='idea-text' style={{ textAlign: 'left' }}>{deploy}</p>
                     <a 
-                        href={`https://chat.openai.com/?q=${encodeURIComponent(build)}`} 
+                        href={`https://chat.openai.com/?q=${encodeURIComponent(generateChatGPTPrompt(build, deploy))}`} 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         style={{ display: 'block', marginTop: '16px', textDecoration: 'none' }}
                     >
-                        <Button color="white" label="get specific ideas" image="./chatgpt-logo.png" />
+                        <Button color="rgb(206, 205, 195)" label="i'm stuck on what to build" image="./chatgpt-logo.png" />
                     </a>
                 </div>
                 <div style={{ display: 'flex', flexDirection: 'row', gap: '2em' }}>
-                    <Button color="red" label="i give up" onClick={() => setPrompt({ text: 'why did you give up?', submit: 'i give up', cancel: 'still trying', active: true })} />
-                    <Button color="green" label="i'm done!" onClick={() => setPrompt({ text: 'what did you accomplish?', submit: 'i\'m done', cancel: 'not yet', active: true })} />
+                    <Button color="rgb(175, 48, 41)" label="i give up" onClick={() => setPrompt({ text: 'why did you give up?', submit: 'i give up', cancel: 'still trying', active: true })} />
+                    <Button color="rgb(102, 128, 11)" label="i'm done!" onClick={() => setPrompt({ text: 'what did you accomplish?', submit: 'i\'m done', cancel: 'not yet', active: true })} />
                 </div>
                 </div>
                 <div style={{ height: '24px' }}></div>
