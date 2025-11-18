@@ -64,7 +64,7 @@ function NewIdea() {
             transform: idea !== null ? 'translateY(0)' : 'translateY(20px)',
             transition: 'opacity 0.3s ease-in-out, transform 0.3s ease-in-out'
           }}>
-            <Idea build={idea !== null ? idea.build : "todo"} deploy={idea !== null ? idea.deploy : "todo"} />
+            <Idea build={idea !== null ? idea.build : ""} deploy={idea !== null ? idea.deploy : ""} />
           </div>
     </>
   );

@@ -34,19 +34,21 @@ const Idea = ({ build, deploy }) => {
                     <p className='idea-text' style={{ textAlign: 'left' }}>{build}</p>
                     <h2>ship it</h2>
                     <p className='idea-text' style={{ textAlign: 'left' }}>{deploy}</p>
-                    <a 
-                        href={`https://chat.openai.com/?q=${encodeURIComponent(generateChatGPTPrompt(build, deploy))}`} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        style={{ display: 'block', marginTop: '16px', textDecoration: 'none' }}
-                    >
-                        <Button color="rgb(206, 205, 195)" label="i'm stuck on what to build" image="./chatgpt-logo.png" />
-                    </a>
-                </div>
-                <div style={{ display: 'flex', flexDirection: 'row', gap: '2em' }}>
-                    <Button color="rgb(175, 48, 41)" label="i give up" onClick={() => setPrompt({ text: 'why did you give up?', submit: 'i give up', cancel: 'still trying', active: true })} />
-                    <Button color="rgb(102, 128, 11)" label="i'm done!" onClick={() => setPrompt({ text: 'what did you accomplish?', submit: 'i\'m done', cancel: 'not yet', active: true })} />
-                </div>
+                    </div>
+                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
+                        <a 
+                            href={`https://chat.openai.com/?q=${encodeURIComponent(generateChatGPTPrompt(build, deploy))}`} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            style={{ textDecoration: 'none' }}
+                        >
+                            <Button color="rgb(206, 205, 195)" label="i'm stuck on what to build" image="./chatgpt-logo.png" />
+                        </a>
+                        <div style={{ display: 'flex', flexDirection: 'row', gap: '2em' }}>
+                            <Button color="rgb(175, 48, 41)" label="i give up" onClick={() => setPrompt({ text: 'why did you give up?', submit: 'i give up', cancel: 'still trying', active: true })} />
+                            <Button color="rgb(102, 128, 11)" label="i'm done!" onClick={() => setPrompt({ text: 'what did you accomplish?', submit: 'i\'m done', cancel: 'not yet', active: true })} />
+                        </div>
+                    </div>
                 </div>
                 <div style={{ height: '24px' }}></div>
                 <div 
