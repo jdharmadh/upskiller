@@ -54,8 +54,8 @@ function NewIdea() {
           <div style={{
             opacity: loading ? 1 : 0,
             transform: loading ? 'translateY(0)' : 'translateY(20px)',
-            transition: 'opacity 0.3s ease-in-out, transform 0.3s ease-in-out',
-            paddingTop: '60px'
+            transition: 'all 0.3s ease-in-out, padding-top 0.5s ease-out',
+            paddingTop: loading ? '60px' : '0px'
           }}>
             <Loading />
           </div>
