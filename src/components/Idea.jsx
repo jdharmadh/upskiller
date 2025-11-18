@@ -42,7 +42,7 @@ const Idea = ({ build, deploy }) => {
                             rel="noopener noreferrer" 
                             style={{ textDecoration: 'none' }}
                         >
-                            <Button color="rgb(206, 205, 195)" label="i'm stuck on what to build" image="./chatgpt-logo.png" />
+                            <Button color="rgb(206, 205, 195)" label="i'm stuck on what to build" image="https://images.seeklogo.com/logo-png/46/2/chatgpt-logo-png_seeklogo-465219.png" />
                         </a>
                         <div style={{ display: 'flex', flexDirection: 'row', gap: '2em' }}>
                             <Button color="rgb(175, 48, 41)" label="i give up" onClick={() => setPrompt({ text: 'why did you give up?', submit: 'i give up', cancel: 'still trying', active: true })} />
