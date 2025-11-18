@@ -41,7 +41,7 @@ function NewIdea() {
 
   return (
     <>
-        <div style={{ display: buttonsHidden ? "none" : "flex", gap: "60px", padding: "60px", opacity: generated ? 0 : 1, transition: "all 0.3s ease-in-out", visibility: generated ? "hidden" : "visible"}}>
+        <div style={{ display: buttonsHidden ? "none" : "flex", gap: "1rem", padding: "1rem", paddingTop:"2rem", opacity: generated ? 0 : 1, transition: "all 0.3s ease-in-out", visibility: generated ? "hidden" : "visible"}}>
           <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
             <Button label="i'm hungry" onClick={() => handleShowIdea("hungry")} />
             <Text content="you're ready to apply your skills to something challenging." style={{ padding: "2vh", maxWidth: "300px" }} />
