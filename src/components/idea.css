@@ -1,11 +1,16 @@
 .idea {
-    padding-top: 40px;
+    padding-top: 1rem;
     padding-left: 1em;
 }
 
 p.idea-text {
     font-size: large;
     padding-bottom: 2rem;
+}
+
+p.idea-text-two {
+    font-size: large;
+    padding-bottom: 1rem;
 }
 
 h2 {

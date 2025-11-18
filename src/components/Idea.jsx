@@ -33,7 +33,7 @@ const Idea = ({ build, deploy }) => {
                     <h2>build it </h2>
                     <p className='idea-text' style={{ textAlign: 'left' }}>{build}</p>
                     <h2>ship it</h2>
-                    <p className='idea-text' style={{ textAlign: 'left' }}>{deploy}</p>
+                    <p className='idea-text-two' style={{ textAlign: 'left' }}>{deploy}</p>
                     </div>
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px' }}>
                         <a 
@@ -42,7 +42,7 @@ const Idea = ({ build, deploy }) => {
                             rel="noopener noreferrer" 
                             style={{ textDecoration: 'none' }}
                         >
-                            <Button color="rgb(206, 205, 195)" label="i'm stuck on what to build" image="https://images.seeklogo.com/logo-png/46/2/chatgpt-logo-png_seeklogo-465219.png" />
+                            <Button color="rgb(206, 205, 195)" label="help me refine my idea" image="https://images.seeklogo.com/logo-png/46/2/chatgpt-logo-png_seeklogo-465219.png" />
                         </a>
                         <div style={{ display: 'flex', flexDirection: 'row', gap: '2em' }}>
                             <Button color="rgb(175, 48, 41)" label="i give up" onClick={() => setPrompt({ text: 'why did you give up?', submit: 'i give up', cancel: 'still trying', active: true })} />
